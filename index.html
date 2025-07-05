@@ -4,148 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skybound Travels</title>
+  <title>Skybound Travels | Discover the World with Expertly Curated Tours</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Skybound Travels offers premium travel packages to top global destinations. Explore, book, and embark on your next adventure.">
+  <meta name="keywords" content="travel, tourism, vacation, packages, adventure, honeymoon, luxury tours, Skybound Travels">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Skybound Travels">
+  <meta name="language" content="en">
+
+  <!-- Open Graph (Facebook, LinkedIn, WhatsApp) -->
+  <meta property="og:title" content="Skybound Travels | Explore the World">
+  <meta property="og:description" content="Discover dream destinations and exclusive travel packages with Skybound Travels.">
+  <meta property="og:image" content="https://tutorialsandroid.github.io/Skybound-Website/assets/images/og-preview.jpg"> <!-- Change this URL -->
+  <meta property="og:url" content="https://tutorialsandroid.github.io/Skybound-Website/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Skybound Travels | Explore the World">
+  <meta name="twitter:description" content="Discover dream destinations and exclusive travel packages with Skybound Travels.">
+  <meta name="twitter:image" content="https://tutorialsandroid.github.io/Skybound-Website/assets/images/og-preview.jpg"> <!-- Change this URL -->
+
+  <!-- Favicon -->
+  <link rel="icon" href="./assets/favicon/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background-color: #f8f9fa;
-    }
-
-    .navbar {
-      background-color: #0d6efd;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
-    .navbar-brand {
-      font-size: 1.8rem;
-      font-weight: 700;
-    }
-
-    .hero {
-      background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url('./assets/images/hero_image.avif') center/cover no-repeat;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: #fff;
-    }
-
-    .hero h1 {
-      font-size: 4.5rem;
-      font-weight: 800;
-    }
-
-    .hero p {
-      font-size: 1.25rem;
-      margin-top: 15px;
-    }
-
-
-
-    .section-title::after {
-      content: '';
-      width: 60px;
-      height: 4px;
-      background: #0d6efd;
-      position: absolute;
-      bottom: -10px;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    .card {
-      border: none;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
-      transition: all 0.3s ease-in-out;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
-    }
-
-    .card img {
-      object-fit: cover;
-    }
-
-    .btn-primary {
-      background-color: #0d6efd;
-      border: none;
-    }
-
-    .btn-primary:hover {
-      background-color: #0b5ed7;
-    }
-
-    .form-control:focus {
-      border-color: #0d6efd;
-      box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
-    }
-
-    .section-title {
-      font-size: 2.75rem;
-      font-weight: 700;
-      text-align: center;
-      margin-bottom: 50px;
-      position: relative;
-      animation: fadeInDown 1s ease-in-out;
-    }
-
-    @keyframes fadeInDown {
-      from {
-        opacity: 0;
-        transform: translateY(-20px);
-      }
-
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
-    }
-
-    input::placeholder,
-    textarea::placeholder {
-      color: #999;
-    }
-
-    footer {
-      background-color: #0d6efd;
-      color: white;
-      padding: 40px 0;
-    }
-
-    footer .social-icons a {
-      color: white;
-      font-size: 1.25rem;
-      margin-right: 15px;
-      transition: color 0.3s;
-    }
-
-    footer .social-icons a:hover {
-      color: #ffc107;
-    }
-
-    #tsparticles canvas {
-      position: fixed !important;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
-  </style>
+  <link rel="stylesheet" href="./index.css">
 </head>
 
 <body>
-  <div id="tsparticles"></div>
 
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
@@ -346,7 +238,6 @@
     </div>
   </section>
 
-
   <footer>
     <div class="container text-center">
       <div class="mb-3">
@@ -362,26 +253,6 @@
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3.1.0/tsparticles.bundle.min.js"></script>
-  <script>
-    tsParticles.load("tsparticles", {
-      fullScreen: { enable: true, zIndex: -1 },
-      particles: {
-        number: { value: 80 },
-        color: { value: "#ffffff" },
-        shape: { type: "circle" },
-        opacity: { value: 0.5 },
-        size: { value: { min: 1, max: 4 } },
-        move: {
-          enable: true,
-          speed: 1.5,
-          direction: "bottom",
-          outModes: { default: "out" }
-        }
-      },
-      background: { color: "transparent" }
-    });
-  </script>
 
 </body>
 
